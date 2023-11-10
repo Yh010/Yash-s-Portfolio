@@ -6,7 +6,7 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
+    default: "Yash Hegde Portfolio",
     template: "%s | chronark.com",
   },
   description: "Co-founder of unkey.dev and founder of planetfall.io",
