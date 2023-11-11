@@ -9,6 +9,7 @@ const navigation = [
   { name: "Experience", href: "/experience" },
   { name: "Contact", href: "/contact" },
   { name: "Achievements", href: "/achievements" },
+  { name: "Resume", href: "https://drive.google.com/file/d/18v-9uZ4HUgX6tgtclot4S1bTlI8mEGvi/view?usp=sharing", external: true }, // Add your resume link here
 ];
 
 export default function Home() {
