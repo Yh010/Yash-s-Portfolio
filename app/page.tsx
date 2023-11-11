@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
+import myPhoto from "../public/Yash.jpg";
+import Image from "next/image"; // Import the Image component
 
 const navigation = [
   { name: "Projects", href: "/projects" },
@@ -28,13 +30,20 @@ export default function Home() {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
       />
-      <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
-        Yash Hegde
-      </h1>
+      <div className="flex items-center justify-center">
+        <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+          Yash Hegde
+        </h1>
+        <Image
+          src={myPhoto}
+          alt="Yash Hegde's Photo"
+          className="ml-4 w-44 h-34 object-cover border-2 border-zinc-500 animate-fade-in"
+        />
+      </div>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
-        <h2 className="text-sm text-zinc-500 ">
+        <h1 className="text-sm text-zinc-300 ">
           Passionate Developer with a penchant for dismantling and reconstructing, fueled by a rapid learning aptitude. <br />
           Seeking opportunities to leave an indelible mark on the universe. <br />
          {/* I'm building{" "}
@@ -45,9 +54,8 @@ export default function Home() {
           >
             unkey.dev
           </Link> to solve API authentication and authorization for developers.*/}
-        </h2>
+        </h1>
       </div>
     </div>
   );
-
 }
