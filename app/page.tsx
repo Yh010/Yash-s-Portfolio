@@ -6,6 +6,7 @@ import Image from "next/image"; // Import the Image component
 
 const navigation = [
   { name: "Projects", href: "/projects" },
+  { name: "Experience", href: "/experience" },
   { name: "Contact", href: "/contact" },
 ];
 
