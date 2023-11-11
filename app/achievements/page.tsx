@@ -5,50 +5,70 @@ import { Card } from "../components/card";
 
 const experiences = [
   {
-    companyName: "Sofware Developer Intern",
-    iconLink: "https://corpwebstorage.blob.core.windows.net/media/46207/lnt-energy-hydrocarbon-logo.png", // Replace with your Google Drive link
-    description: `Transformed operational efficiency through automated cable route extraction from AutoCAD .dxf files, reducing processing time from 25 days to 1 hour. Applied graph-based optimization with Dijkstra’s algorithm for plant layouts. Revolutionized LnT project documentation, implementing CRUD operations and SQL queries to cut manual user manual creation time from 1-2 days to 30 minutes. Streamlined data extraction, automating invoice and table information retrieval from PDFs, slashing processing time from 4-5 days to 15 minutes using Python libraries: Tabula, spaCy, Pdfplumber.`,
+    companyName: "All over India Top 50",
+    iconLink: "https://media.licdn.com/dms/image/D5622AQEHEH2Ql8hPIw/feedshare-shrink_800/0/1695975791730?e=1700092800&v=beta&t=mAQ0F525UlqBX_bnTPt7RHSorQUcKB_vB5tHyB1ikBs", // Replace with your Google Drive link
+    Date: "October 2023",
+    description: `Problem:
+
+    Efficiently transfer diverse data between vehicles and external entities
+    Demand for a secure, resilient, low-latency, and high-throughput software framework
+    Essential mobile application for user access and control
+    Solution:
+    
+    Introduce AI-Driven Networking and Processing Architecture (AIDA)
+    Utilize IEEE 802.1 TSN for real-time communication
+    Feature edge compute monitoring with Prometheus, Loki, Grafana
+    Support pluggable ML pipelines for edge node data processing
+    Ensure reliable communication and fine-grained performance monitoring
+    Provide centralized management for industrial IoT networks`,
   },
   {
-    companyName: "Open source contributor",
-    iconLink: "https://boxboat.com/2021/12/06/secure-supply-chains-kyverno/featured.png", // Replace with your Google Drive link
-    description: `◦ Kubernetes and Automation:
-    Enhanced access control through the refinement of workflow tokens, yielding a 20% decrease in unauthorized access incidents. Implemented YAML field validation for specific policies, resulting in a 30% reduction in policy-related errors. Executed JMESPath validation, elevating data query accuracy by 40%.`,
+    companyName: "National Finalist",
+    iconLink: "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/64ca1d68357b4_dr-reddys-aspire-the-ultimate-case-study-challenge.jpg", // Replace with your Google Drive link
+    Date: "September 2023",
+    description: `Revolutionized pharmaceutical bead mill processes, vital in drug formulation, through strategic optimization. Addressed five technical challenges, enhancing particle size control, process efficiency, and equipment optimization. Overcame optimization hurdles by adjusting parameters and suggesting quality control improvements. Presented comprehensive solutions in a persuasive PowerPoint format, showcasing problem identification, proposed strategies, rationale, and supporting data. Achieved objectives by analyzing technical challenges, devising innovative solutions, and providing compelling evidence for feasibility and effectiveness.`,
   },
-  {
-    companyName: "Open source contributor @Internet Health Report",
-    iconLink: "https://avatars.githubusercontent.com/u/40665700?s=200&v=4", // Replace with your Google Drive link
-    description: `Developed a Vue.js front-end with IP address search, enhancing user experience and search functionality. Accomplished
-    efficient back-end crawler scripts to fetch and link domain names to URLs, improving data retrieval. Increased data
-    processing by retrieving information from a Kafka database, enabling real-time data aggregation. Achieved a 30%
-    reduction in data retrieval time and a 20% increase in data aggregation efficiency`,
-  },
+
 ];
+
+// ... (previous code)
+
+// ... (previous code)
 
 // ... (previous code)
 
 export default function Example() {
     return (
-      <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
+      <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
         <Navigation />
         <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
-          <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
+          <div className="grid w-full grid-cols-3 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
             {experiences.map((experience, index) => (
               <Card key={index}>
-                <div className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 lg:pb-8 md:p-8"> {/* Adjusted padding classes */}
-                  {/* Replace the social media icon with the company icon */}
+                <div className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 lg:pb-8 md:p-8 max-h-full overflow-y-auto">
                   <img
                     src={experience.iconLink}
                     alt={`Icon for ${experience.companyName}`}
-                    className="w-30 h-20"
+                    className="w-40 h-30"
                   />
                   <div className="z-10 flex flex-col items-center">
                     <span className="lg:text-xl font-medium duration-150 xl:text-3xl text-zinc-200 font-display">
                       {experience.companyName}
                     </span>
-                    <span className="mt-4 text-sm text-center duration-1000 text-zinc-400">
+                    <span className="text-zinc-400 mt-2">{experience.Date}</span>
+                    <span className="mt-2 text-sm text-center duration-1000 text-zinc-400">
                       {experience.description}
                     </span>
+                    {index === 0 && ( // Only show the link in the first card
+                      <a
+                        href="https://www.canva.com/design/DAFzSTUgQqo/56NdP4HaZmhwqG9vWhQovg/edit?utm_content=DAFzSTUgQqo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-500 underline hover:text-blue-700 mt-2"
+                      >
+                        View our work here
+                      </a>
+                    )}
                   </div>
                 </div>
               </Card>
