@@ -13,6 +13,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <nav className="my-16 animate-fade-in">
+        
         <ul className="flex items-center justify-center gap-4">
           {navigation.map((item) => (
             <Link
@@ -44,8 +45,7 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h1 className="text-sm text-zinc-300 ">
-          Passionate Developer with a penchant for dismantling and reconstructing, fueled by a rapid learning aptitude. <br />
-          Seeking opportunities to leave an indelible mark on the universe. <br />
+          Passionate Full Stack Developer with a knack for dismantling and reconstructing. <br/> Open source contributor, adept in DevOps and Kubernetes. Eager to leave a lasting mark on the universe.<br />
          {/* I'm building{" "}
           <Link
             target="_blank"
