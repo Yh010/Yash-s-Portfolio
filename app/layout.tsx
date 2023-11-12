@@ -9,16 +9,16 @@ export const metadata: Metadata = {
     default: "Yash Hegde Portfolio",
     template: "%s | chronark.com",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "My portfolio website",
   openGraph: {
-    title: "chronark.com",
+    title: "Yash Hegde",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+      "Full stack developer",
+    url: "https://yash-s-portfolio-three.vercel.app/",
+    siteName: "Yash Hegde",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://drive.google.com/file/d/1kHzhON0ge98OuJy1z-bGpLXQzitBTW5a/view?usp=sharing",
         width: 1920,
         height: 1080,
       },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "YashHegde7",
     card: "summary_large_image",
   },
   icons: {
