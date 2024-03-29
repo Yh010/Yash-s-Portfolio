@@ -5,6 +5,12 @@ import { Card } from "../components/card";
 
 const experiences = [
   {
+    companyName: "Full Stack Engineer Intern @Persana AI ( YCombinator W23 )",
+    iconLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNwAl71zX3_p4aQwSf5Io-ZV2KG9kR-Vh73JhLKmbPo6ecsEyz5Pi7MOa_Brb7aqDxa3o&usqp=CAU", // Replace with your Google Drive link
+    description: `Extensively contributed to the frontend, migrating features from the legacy platform to the new one, and concurrently developed additional features for platform enhancement.
+    
+    Tech stacks: React with Typescript, Zustand,Tailwind, Chakra UI,MongoDb,Tanstack router`,
+  },{
     companyName: "Sofware Developer Intern",
     iconLink: "https://corpwebstorage.blob.core.windows.net/media/46207/lnt-energy-hydrocarbon-logo.png", // Replace with your Google Drive link
     description: `Transformed operational efficiency through automated cable route extraction from AutoCAD .dxf files, reducing processing time from 25 days to 1 hour. Applied graph-based optimization with Dijkstra’s algorithm for plant layouts. Revolutionized LnT project documentation, implementing CRUD operations and SQL queries to cut manual user manual creation time from 1-2 days to 30 minutes. Streamlined data extraction, automating invoice and table information retrieval from PDFs, slashing processing time from 4-5 days to 15 minutes using Python libraries: Tabula, spaCy, Pdfplumber.`,
@@ -29,7 +35,7 @@ const experiences = [
 
 export default function Example() {
     return (
-      <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
+      <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 mt-20">
         <Navigation />
         <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
           <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
